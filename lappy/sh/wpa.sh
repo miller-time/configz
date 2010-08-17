@@ -1,3 +1,5 @@
+# thanks go out to Hunner for helping me set up wpa_supp
+
 stop network-manager
 pkill wpa_supplicant
 pkill dhclient

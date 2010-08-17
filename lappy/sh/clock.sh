@@ -1,3 +1,6 @@
+# all thanks go to clarkb
+# had to do some tweaking for screensize
+
 while :; do
     date
     cal
