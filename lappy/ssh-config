@@ -1,0 +1,15 @@
+Host linuxlab
+	HostName linuxlab.cs.pdx.edu
+	User millerr
+
+Host screen
+	HostName macaroni.cs.pdx.edu
+	User millerr
+
+Host chandra
+	HostName chandra.cs.pdx.edu
+	User millerr
+
+Host home
+	HostName millertime.dnsdojo.com
+	User russell
