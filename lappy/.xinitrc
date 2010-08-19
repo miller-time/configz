@@ -1,9 +1,19 @@
-#fire up X
+# .xinitrc - thanks to Clarkb
 
 xrdb -merge ~/.Xresources
 xset b off
-xsetbg -xzoom 120 -yzoom 120 /home/millertime/Pictures/sunshine.jpg
+#xsetbg -center -xzoom 100 -yzoom 100 /home/millertime/pictures/diablo3.jpg
 
-/home/millertime/batt.sh &
-/home/millertime/clock.sh &
-exec ssh-agent /home/millertime/.dwm/bin/dwm
+# battery and clock addons
+#/home/millertime/sh/batt.sh &
+#/home/millertime/sh/clock.sh &
+
+
+# for launching fluxbox
+#exec startfluxbox
+
+
+# for launching xmonad
+xmobar /home/millertime/.xmobarrc &
+xsetroot -cursor_name left_ptr
+xmonad
