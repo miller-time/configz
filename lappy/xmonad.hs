@@ -18,7 +18,7 @@ import qualified Data.Map        as M
 -- certain contrib modules.
 --
 --myTerminal      = "xterm -bg black -fg white"
-myTerminal      = "gnome-terminal"
+myTerminal      = "urxvt"
  
 -- Width of the window border in pixels.
 --
@@ -76,8 +76,11 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
     -- launch dmenu
     , ((modMask,               xK_p     ), spawn "exe=`dmenu_path | dmenu -i -nb black -nf grey -sb grey -sf black` && eval \"exec $exe\"")
 
+    -- launch Chromium
+    , ((modMask,               xK_c     ), spawn "chromium")
+    
     -- lock the screen
-    , ((modMask .|. shiftMask, xK_l	), spawn "gnome-screensaver-command -l")
+    , ((modMask .|. shiftMask, xK_l	), spawn "xlock -mode pacman")
  
     -- launch gmrun
     , ((modMask .|. shiftMask, xK_p     ), spawn "gmrun")
