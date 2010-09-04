@@ -2,7 +2,7 @@
 
 xrdb -merge ~/.Xresources
 xset b off
-xsetbg -center -xzoom 100 -yzoom 100 /home/russell/Pictures/ff-girl.jpg
+xsetbg -center -xzoom 100 -yzoom 100 /home/russell/Pictures/ice-mountains.jpg
 
 # battery and clock addons
 #/home/millertime/sh/batt.sh &
