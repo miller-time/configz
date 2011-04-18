@@ -1,4 +1,0 @@
-! this is to set up 'false' transparency
-
-URxvt.transparent: true
-URxvt.shading: 50

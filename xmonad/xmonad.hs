@@ -76,12 +76,18 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
     -- launch dmenu
     , ((modMask,               xK_p     ), spawn "exe=`dmenu_path | dmenu -i -nb black -nf grey -sb grey -sf black` && eval \"exec $exe\"")
 
-    -- lock the screen
+    -- lock the screen in gnome
     , ((modMask .|. shiftMask, xK_l	), spawn "gnome-screensaver-command -l")
 
-    -- launch Chrome
+    -- lock the screen using Xlock
+    -- , ((modMask .|. shiftMask, xK_l	), spawn "xlock -mode pacman")
+
+    -- launch Chrome in Ubuntu
     , ((modMask,	       xK_c     ), spawn "google-chrome")
  
+    -- launch Chromium
+    -- , ((modMask,               xK_c     ), spawn "chromium")
+
     -- launch gmrun
     , ((modMask .|. shiftMask, xK_p     ), spawn "gmrun")
  
